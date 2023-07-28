@@ -215,7 +215,7 @@ closeButton.addEventListener("click", function() {
                   <br></br>
                 </span>
                 <span className="home-text40">
-                  Conduct the phone call as normal and hang up 
+                  Conduct the phone call and hang up at the end as normal 
                 </span>
               </div>
               <div className="home-container6"></div>
@@ -493,7 +493,8 @@ Here's what the above is doing:
             flex-direction: column;
           }
           .home-centered {
-            width: 100%;
+            width: auto;
+            height: auto;
             display: flex;
             max-width: 1200px;
             box-sizing: initial;
@@ -506,6 +507,7 @@ Here's what the above is doing:
             background-color: #ffffff;
           }
           .home-left {
+            width: 100%;
             height: 100%;
             display: flex;
             align-items: center;
@@ -515,35 +517,48 @@ Here's what the above is doing:
             justify-content: flex-start;
           }
           .home-image {
-            width: 193px;
-            height: 49px;
-            align-self: stretch;
+            flex: initial;
+            width: auto;
+            height: 51px;
+            align-self: center;
             object-fit: cover;
           }
           .home-links1 {
+            width: 100%;
+            height: 100%;
             display: flex;
             align-items: center;
             margin-left: 33px;
             flex-direction: row;
           }
           .home-text03 {
-            font-size: 30px;
+            font-size: 16px;
+            line-height: 1.15;
+            margin-left: 40px;
           }
           .home-text04 {
-            font-size: 30px;
+            font-size: 16px;
+            line-height: 1.15;
+            margin-left: 40px;
           }
           .home-text05 {
-            font-size: 30px;
+            font-size: 16px;
+            line-height: 1.15;
+            margin-left: 40px;
+            letter-spacing: auto;
           }
           .home-right {
+            width: 75%;
             height: 100%;
             display: flex;
             align-items: center;
             padding-top: var(--dl-space-space-oneandhalfunits);
             flex-direction: row;
             padding-bottom: var(--dl-space-space-oneandhalfunits);
+            justify-content: center;
           }
           .home-get-started {
+            width: auto;
             cursor: pointer;
             display: flex;
             transition: 0.3s;
@@ -554,6 +569,7 @@ Here's what the above is doing:
             padding-right: var(--dl-space-space-oneandhalfunits);
             flex-direction: column;
             padding-bottom: var(--dl-space-space-unit);
+            justify-content: center;
             background-color: #000000;
           }
           .home-get-started:hover {
@@ -561,9 +577,10 @@ Here's what the above is doing:
           }
           .home-text06 {
             color: rgb(255, 255, 255);
-            font-size: 20px;
+            font-size: autopx;
             font-style: normal;
             font-weight: 600;
+            line-height: 1.15;
           }
           .home-burger-menu {
             display: flex;
@@ -619,15 +636,17 @@ Here's what the above is doing:
           .home-text09 {
             font-size: 24px;
             font-style: normal;
+            text-align: center;
             font-weight: 600;
+            line-height: 1.15;
           }
           .home-features {
             width: 100%;
-            height: 1060px;
+            height: auto;
             display: flex;
             z-index: 1;
             align-items: center;
-            padding-top: 99px;
+            padding-top: var(--dl-space-space-sixunits);
             padding-left: var(--dl-space-space-sevenunits);
             padding-right: var(--dl-space-space-sevenunits);
             flex-direction: column;
@@ -668,7 +687,7 @@ Here's what the above is doing:
             flex-direction: row;
           }
           .home-schedule {
-            height: 270px;
+            height: auto;
             padding-top: 28px;
           }
           .home-icon02 {
@@ -687,7 +706,7 @@ Here's what the above is doing:
             line-height: 24px;
           }
           .home-publish {
-            height: initial;
+            height: auto;
             padding-top: var(--dl-space-space-oneandhalfunits);
           }
           .home-icon04 {
@@ -715,6 +734,7 @@ Here's what the above is doing:
             flex-direction: row;
           }
           .home-analyze {
+            height: auto;
             padding-top: var(--dl-space-space-oneandhalfunits);
           }
           .home-icon06 {
@@ -736,6 +756,7 @@ Here's what the above is doing:
             font-style: italic;
           }
           .home-get-leads {
+            height: auto;
             padding-top: var(--dl-space-space-oneandhalfunits);
           }
           .home-icon08 {
@@ -755,7 +776,7 @@ Here's what the above is doing:
           }
           .home-how-it-works {
             gap: 0;
-            width: 100%;
+            width: auto;
             display: flex;
             position: relative;
             align-self: center;
@@ -780,8 +801,9 @@ Here's what the above is doing:
             height: 344px;
             display: flex;
             max-width: 1200px;
-            margin-top: 80px;
+            margin-top: 0px;
             align-items: center;
+            margin-bottom: var(--dl-space-space-twounits);
             flex-direction: column;
           }
           .home-container3 {
@@ -789,8 +811,9 @@ Here's what the above is doing:
             width: 100%;
             display: flex;
             align-self: flex-start;
+            margin-top: var(--dl-space-space-threeunits);
             align-items: center;
-            margin-bottom: var(--dl-space-space-twounits);
+            margin-bottom: var(--dl-space-space-threeunits);
             flex-direction: row;
           }
           .home-schedule1 {
@@ -810,7 +833,7 @@ Here's what the above is doing:
             padding-bottom: 0px;
           }
           .home-text26 {
-            font-size: 25px;
+            font-size: 24px;
             align-self: flex-start;
             line-height: 24px;
             padding-top: 12px;
@@ -819,19 +842,17 @@ Here's what the above is doing:
             padding-bottom: 12px;
           }
           .home-text27 {
-            font-size: 24px;
             font-style: normal;
             font-weight: 600;
           }
           .home-text29 {
-            font-size: 25px;
+            font-size: 24px;
             align-self: flex-start;
             line-height: 24px;
             padding-top: 12px;
             padding-bottom: 12px;
           }
           .home-text30 {
-            font-size: 24px;
             font-style: normal;
             font-weight: 600;
           }
@@ -842,18 +863,20 @@ Here's what the above is doing:
             font-weight: 600;
             line-height: 24px;
             padding-top: 12px;
+            margin-bottom: var(--dl-space-space-threeunits);
             padding-bottom: 12px;
           }
           .home-container4 {
-            width: 233px;
-            height: 375px;
+            width: 25%;
+            height: 100%;
             display: flex;
             align-items: flex-start;
             border-color: rgba(120, 120, 120, 0.4);
             border-style: dashed;
             border-width: 0px;
             background-size: cover;
-            background-image: url('/asset%209-300w.png');
+            justify-content: flex-end;
+            background-image: url('/asset%209-200w.png');
           }
           .home-cards2 {
             width: 100%;
@@ -866,11 +889,11 @@ Here's what the above is doing:
           .home-container5 {
             gap: var(--dl-space-space-twounits);
             width: 100%;
-            height: 368px;
+            height: 320px;
             display: flex;
             align-self: flex-start;
             align-items: center;
-            margin-bottom: var(--dl-space-space-twounits);
+            margin-bottom: 0px;
             flex-direction: row;
           }
           .home-schedule2 {
@@ -878,6 +901,7 @@ Here's what the above is doing:
             height: auto;
             padding-top: 2px;
             padding-right: var(--dl-space-space-oneandhalfunits);
+            padding-bottom: 42px;
           }
           .home-text33 {
             width: 75%;
@@ -890,7 +914,7 @@ Here's what the above is doing:
             padding-bottom: 0px;
           }
           .home-text34 {
-            font-size: 25px;
+            font-size: 24px;
             align-self: flex-start;
             line-height: 24px;
             padding-top: 12px;
@@ -899,19 +923,17 @@ Here's what the above is doing:
             padding-bottom: 12px;
           }
           .home-text35 {
-            font-size: 24px;
             font-style: normal;
             font-weight: 600;
           }
           .home-text37 {
-            font-size: 25px;
+            font-size: 24px;
             align-self: flex-start;
             line-height: 24px;
             padding-top: 12px;
             padding-bottom: 12px;
           }
           .home-text38 {
-            font-size: 24px;
             font-style: normal;
             font-weight: 600;
           }
@@ -922,26 +944,32 @@ Here's what the above is doing:
             font-weight: 600;
             line-height: 24px;
             padding-top: 12px;
+            margin-bottom: var(--dl-space-space-threeunits);
             padding-bottom: 12px;
           }
           .home-container6 {
-            width: 233px;
-            height: 375px;
+            gap: var(--dl-space-space-twounits);
+            width: 25%;
+            height: 100%;
             display: flex;
-            align-items: flex-start;
+            align-items: stretch;
+            padding-top: 0px;
             border-color: rgba(120, 120, 120, 0.4);
             border-style: dashed;
             border-width: 0px;
             background-size: cover;
-            background-image: url('/asset%2011-300w.png');
+            justify-content: flex-end;
+            background-image: url('/asset%2011-200w.png');
           }
           .home-container7 {
             gap: var(--dl-space-space-twounits);
             width: 100%;
+            height: 400px;
             display: flex;
             align-self: flex-start;
+            margin-top: var(--dl-space-space-threeunits);
             align-items: center;
-            margin-bottom: var(--dl-space-space-twounits);
+            margin-bottom: var(--dl-space-space-threeunits);
             flex-direction: row;
           }
           .home-schedule3 {
@@ -975,14 +1003,13 @@ Here's what the above is doing:
             font-weight: 600;
           }
           .home-text45 {
-            font-size: 25px;
+            font-size: 24px;
             align-self: flex-start;
             line-height: 24px;
             padding-top: 12px;
             padding-bottom: 12px;
           }
           .home-text46 {
-            font-size: 24px;
             font-style: normal;
             font-weight: 600;
           }
@@ -993,6 +1020,7 @@ Here's what the above is doing:
             line-height: 24px;
             padding-top: 12px;
             padding-left: 0px;
+            margin-bottom: var(--dl-space-space-threeunits);
             padding-bottom: 12px;
             background-color: var(--dl-color-gray-white);
           }
@@ -1001,8 +1029,8 @@ Here's what the above is doing:
             font-weight: 400;
           }
           .home-container8 {
-            width: 233px;
-            height: 400px;
+            width: 25%;
+            height: 100%;
             display: flex;
             margin-top: var(--dl-space-space-oneandhalfunits);
             align-items: flex-start;
@@ -1010,7 +1038,8 @@ Here's what the above is doing:
             border-style: dashed;
             border-width: 0px;
             background-size: cover;
-            background-image: url('/asset%2015-300w.png');
+            justify-content: flex-end;
+            background-image: url('/asset%2015-200w.png');
           }
           .home-banners {
             width: 100%;
