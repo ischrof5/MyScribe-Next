@@ -14,11 +14,6 @@ const Home = (props) => {
         <section className="home-hero">
           <div className="home-menu">
             <div id="mobile-menu" className="home-mobile-navigation">
-              <img
-                alt="pastedImage"
-                src="https://play.teleporthq.io/static/svg/placeholders/no-image.svg"
-                className="home-logo"
-              />
               <div className="home-links">
                 <span className="Link">Solutions</span>
                 <span className="Link">How it works</span>
@@ -43,17 +38,10 @@ const Home = (props) => {
                     <span className="home-text04 Link">How it works</span>
                     <span className="home-text05 Link">FAQs</span>
                   </div>
-                </div>
-                <div className="home-right">
-                  <div className="home-get-started">
-                    <span className="home-text06">833-924-2571</span>
-                  </div>
-                  <div id="open-mobile-menu" className="home-burger-menu">
-                    <img
-                      alt="pastedImage"
-                      src="https://play.teleporthq.io/static/svg/placeholders/no-image.svg"
-                      className="home-mobile-menu-button"
-                    />
+                  <div className="home-left1">
+                    <div className="home-get-started">
+                      <span className="home-text06">833-924-2571</span>
+                    </div>
                   </div>
                 </div>
               </nav>
@@ -397,7 +385,7 @@ Here's what the above is doing:
         </section>
         <footer className="home-footer">
           <div className="home-top">
-            <div className="home-left1">
+            <div className="home-left2">
               <span className="home-text58">
                 By signing up with our product you agree with our Terms and
                 Conditions.
@@ -426,17 +414,18 @@ Here's what the above is doing:
           }
           .home-hero {
             width: 100%;
-            height: 793px;
+            height: 828px;
             display: flex;
             align-items: center;
             padding-top: var(--dl-space-space-oneandhalfunits);
             padding-left: var(--dl-space-space-sevenunits);
             padding-right: var(--dl-space-space-sevenunits);
             flex-direction: column;
+            padding-bottom: var(--dl-space-space-fourunits);
             background-color: #5228f5;
           }
           .home-menu {
-            width: 100%;
+            width: auto;
             display: flex;
             align-items: center;
             flex-direction: column;
@@ -459,12 +448,10 @@ Here's what the above is doing:
             flex-direction: column;
             background-color: var(--dl-color-gray-white);
           }
-          .home-logo {
-            width: 64px;
-          }
           .home-links {
             gap: var(--dl-space-space-twounits);
             display: flex;
+            align-self: center;
             margin-top: var(--dl-space-space-twounits);
             align-items: flex-start;
             flex-direction: column;
@@ -487,16 +474,18 @@ Here's what the above is doing:
           }
           .home-desktop-navigation {
             width: 100%;
+            height: 100%;
             display: flex;
-            margin-top: var(--dl-space-space-oneandhalfunits);
+            align-self: center;
+            margin-top: 0px;
             align-items: center;
             flex-direction: column;
           }
           .home-centered {
-            width: auto;
+            width: 75%;
             height: auto;
             display: flex;
-            max-width: 1200px;
+            max-width: 75%;
             box-sizing: initial;
             align-items: center;
             padding-left: var(--dl-space-space-oneandhalfunits);
@@ -511,24 +500,25 @@ Here's what the above is doing:
             height: 100%;
             display: flex;
             align-items: center;
-            padding-top: 38px;
+            padding-top: 0px;
             flex-direction: row;
-            padding-bottom: 38px;
+            padding-bottom: 0px;
             justify-content: flex-start;
           }
           .home-image {
             flex: initial;
             width: auto;
-            height: 51px;
+            height: 40%;
             align-self: center;
             object-fit: cover;
           }
           .home-links1 {
-            width: 100%;
+            width: auto;
             height: 100%;
             display: flex;
             align-items: center;
-            margin-left: 33px;
+            margin-left: var(--dl-space-space-oneandhalfunits);
+            margin-right: var(--dl-space-space-oneandhalfunits);
             flex-direction: row;
           }
           .home-text03 {
@@ -547,18 +537,18 @@ Here's what the above is doing:
             margin-left: 40px;
             letter-spacing: auto;
           }
-          .home-right {
-            width: 75%;
+          .home-left1 {
+            width: 100%;
             height: 100%;
             display: flex;
             align-items: center;
-            padding-top: var(--dl-space-space-oneandhalfunits);
+            padding-top: 0px;
             flex-direction: row;
-            padding-bottom: var(--dl-space-space-oneandhalfunits);
-            justify-content: center;
+            padding-bottom: 0px;
+            justify-content: flex-start;
           }
           .home-get-started {
-            width: auto;
+            width: 100%;
             cursor: pointer;
             display: flex;
             transition: 0.3s;
@@ -579,18 +569,9 @@ Here's what the above is doing:
             color: rgb(255, 255, 255);
             font-size: autopx;
             font-style: normal;
+            text-align: center;
             font-weight: 600;
             line-height: 1.15;
-          }
-          .home-burger-menu {
-            display: flex;
-            align-items: center;
-            flex-direction: row;
-          }
-          .home-mobile-menu-button {
-            width: 40px;
-            height: 40px;
-            display: none;
           }
           .home-header {
             display: flex;
@@ -1155,7 +1136,7 @@ Here's what the above is doing:
             justify-content: space-between;
             border-bottom-width: 1px;
           }
-          .home-left1 {
+          .home-left2 {
             width: 521px;
             display: flex;
             align-items: flex-start;
@@ -1210,11 +1191,11 @@ Here's what the above is doing:
             .home-links1 {
               display: none;
             }
+            .home-left1 {
+              margin-left: var(--dl-space-space-halfunit);
+            }
             .home-get-started {
               display: none;
-            }
-            .home-mobile-menu-button {
-              display: flex;
             }
             .home-header {
               width: 100%;
@@ -1307,7 +1288,7 @@ Here's what the above is doing:
             .home-top {
               flex-direction: column;
             }
-            .home-left1 {
+            .home-left2 {
               width: 100%;
               margin-right: 0px;
               margin-bottom: var(--dl-space-space-threeunits);
@@ -1344,8 +1325,8 @@ Here's what the above is doing:
             .home-left {
               margin-left: var(--dl-space-space-unit);
             }
-            .home-right {
-              margin-right: var(--dl-space-space-unit);
+            .home-left1 {
+              margin-left: var(--dl-space-space-unit);
             }
             .home-get-started {
               display: none;
@@ -1506,9 +1487,6 @@ Here's what the above is doing:
           @media (max-width: 479px) {
             .home-hero {
               padding-bottom: 160px;
-            }
-            .home-logo {
-              margin-left: 0px;
             }
             .home-icon {
               align-items: center;
