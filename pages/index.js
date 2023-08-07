@@ -12,43 +12,110 @@ const Home = (props) => {
           <meta property="og:title" content="MyScribe" />
         </Head>
         <section className="home-hero">
-          <div className="home-menu">
-            <div id="mobile-menu" className="home-mobile-navigation">
-              <div className="home-links">
-                <span className="Link">Solutions</span>
-                <span className="Link">How it works</span>
-                <span className="Link">Prices</span>
+          <div className="home-container01">
+            <header
+              data-thq="thq-navbar"
+              className="home-navbar-interactive button"
+            >
+              <img
+                alt="logo"
+                src="/myscribe-1-2-1500h.png"
+                className="home-image"
+              />
+              <div data-thq="thq-navbar-nav" className="home-desktop-menu">
+                <nav className="home-links">
+                  <span className="home-text">About</span>
+                  <span className="home-text01">Features</span>
+                  <span className="home-text02">
+                    <span className="home-text03">FAQs</span>
+                    <br></br>
+                  </span>
+                </nav>
               </div>
-              <div id="close-mobile-menu" className="home-close-mobile-menu">
-                <svg viewBox="0 0 804.5714285714286 1024" className="home-icon">
-                  <path d="M741.714 755.429c0 14.286-5.714 28.571-16 38.857l-77.714 77.714c-10.286 10.286-24.571 16-38.857 16s-28.571-5.714-38.857-16l-168-168-168 168c-10.286 10.286-24.571 16-38.857 16s-28.571-5.714-38.857-16l-77.714-77.714c-10.286-10.286-16-24.571-16-38.857s5.714-28.571 16-38.857l168-168-168-168c-10.286-10.286-16-24.571-16-38.857s5.714-28.571 16-38.857l77.714-77.714c10.286-10.286 24.571-16 38.857-16s28.571 5.714 38.857 16l168 168 168-168c10.286-10.286 24.571-16 38.857-16s28.571 5.714 38.857 16l77.714 77.714c10.286 10.286 16 24.571 16 38.857s-5.714 28.571-16 38.857l-168 168 168 168c10.286 10.286 16 24.571 16 38.857z"></path>
+              <div data-thq="thq-burger-menu" className="home-burger-menu">
+                <svg viewBox="0 0 1024 1024" className="home-icon">
+                  <path d="M128 554.667h768c23.552 0 42.667-19.115 42.667-42.667s-19.115-42.667-42.667-42.667h-768c-23.552 0-42.667 19.115-42.667 42.667s19.115 42.667 42.667 42.667zM128 298.667h768c23.552 0 42.667-19.115 42.667-42.667s-19.115-42.667-42.667-42.667h-768c-23.552 0-42.667 19.115-42.667 42.667s19.115 42.667 42.667 42.667zM128 810.667h768c23.552 0 42.667-19.115 42.667-42.667s-19.115-42.667-42.667-42.667h-768c-23.552 0-42.667 19.115-42.667 42.667s19.115 42.667 42.667 42.667z"></path>
                 </svg>
               </div>
-            </div>
-            <div className="home-desktop-navigation">
-              <nav className="home-centered">
-                <div className="home-left">
-                  <img
-                    alt="image"
-                    src="/myscribe-1-2-200h.png"
-                    className="home-image"
-                  />
-                  <div className="home-links1">
-                    <span className="home-text03 Link">Features</span>
-                    <span className="home-text04 Link">How it works</span>
-                    <span className="home-text05 Link">FAQs</span>
-                  </div>
-                  <div className="home-left1">
-                    <div className="home-get-started">
-                      <span className="home-text06">833-924-2571</span>
+              <div data-thq="thq-mobile-menu" className="home-mobile-menu">
+                <div className="home-nav">
+                  <div className="home-top">
+                    <img
+                      alt="image"
+                      src="https://presentation-website-assets.teleporthq.io/logos/logo.png"
+                      className="home-logo"
+                    />
+                    <div data-thq="thq-close-menu" className="home-close-menu">
+                      <svg viewBox="0 0 1024 1024" className="home-icon02">
+                        <path d="M810 274l-238 238 238 238-60 60-238-238-238 238-60-60 238-238-238-238 60-60 238 238 238-238z"></path>
+                      </svg>
                     </div>
                   </div>
+                  <nav className="home-links1">
+                    <span className="home-text05">About</span>
+                    <span className="home-text06">Features</span>
+                    <span className="home-text07">Pricing</span>
+                    <span className="home-text08">Team</span>
+                    <span className="home-text09">Blog</span>
+                  </nav>
+                  <div className="home-buttons">
+                    <button className="home-login button">Login</button>
+                    <button className="button">Register</button>
+                  </div>
                 </div>
-              </nav>
-            </div>
-            <div>
-              <Script
-                html={`<script>
+                <div>
+                  <svg
+                    viewBox="0 0 950.8571428571428 1024"
+                    className="home-icon04"
+                  >
+                    <path d="M925.714 233.143c-25.143 36.571-56.571 69.143-92.571 95.429 0.571 8 0.571 16 0.571 24 0 244-185.714 525.143-525.143 525.143-104.571 0-201.714-30.286-283.429-82.857 14.857 1.714 29.143 2.286 44.571 2.286 86.286 0 165.714-29.143 229.143-78.857-81.143-1.714-149.143-54.857-172.571-128 11.429 1.714 22.857 2.857 34.857 2.857 16.571 0 33.143-2.286 48.571-6.286-84.571-17.143-148-91.429-148-181.143v-2.286c24.571 13.714 53.143 22.286 83.429 23.429-49.714-33.143-82.286-89.714-82.286-153.714 0-34.286 9.143-65.714 25.143-93.143 90.857 112 227.429 185.143 380.571 193.143-2.857-13.714-4.571-28-4.571-42.286 0-101.714 82.286-184.571 184.571-184.571 53.143 0 101.143 22.286 134.857 58.286 41.714-8 81.714-23.429 117.143-44.571-13.714 42.857-42.857 78.857-81.143 101.714 37.143-4 73.143-14.286 106.286-28.571z"></path>
+                  </svg>
+                  <svg
+                    viewBox="0 0 877.7142857142857 1024"
+                    className="home-icon06"
+                  >
+                    <path d="M585.143 512c0-80.571-65.714-146.286-146.286-146.286s-146.286 65.714-146.286 146.286 65.714 146.286 146.286 146.286 146.286-65.714 146.286-146.286zM664 512c0 124.571-100.571 225.143-225.143 225.143s-225.143-100.571-225.143-225.143 100.571-225.143 225.143-225.143 225.143 100.571 225.143 225.143zM725.714 277.714c0 29.143-23.429 52.571-52.571 52.571s-52.571-23.429-52.571-52.571 23.429-52.571 52.571-52.571 52.571 23.429 52.571 52.571zM438.857 152c-64 0-201.143-5.143-258.857 17.714-20 8-34.857 17.714-50.286 33.143s-25.143 30.286-33.143 50.286c-22.857 57.714-17.714 194.857-17.714 258.857s-5.143 201.143 17.714 258.857c8 20 17.714 34.857 33.143 50.286s30.286 25.143 50.286 33.143c57.714 22.857 194.857 17.714 258.857 17.714s201.143 5.143 258.857-17.714c20-8 34.857-17.714 50.286-33.143s25.143-30.286 33.143-50.286c22.857-57.714 17.714-194.857 17.714-258.857s5.143-201.143-17.714-258.857c-8-20-17.714-34.857-33.143-50.286s-30.286-25.143-50.286-33.143c-57.714-22.857-194.857-17.714-258.857-17.714zM877.714 512c0 60.571 0.571 120.571-2.857 181.143-3.429 70.286-19.429 132.571-70.857 184s-113.714 67.429-184 70.857c-60.571 3.429-120.571 2.857-181.143 2.857s-120.571 0.571-181.143-2.857c-70.286-3.429-132.571-19.429-184-70.857s-67.429-113.714-70.857-184c-3.429-60.571-2.857-120.571-2.857-181.143s-0.571-120.571 2.857-181.143c3.429-70.286 19.429-132.571 70.857-184s113.714-67.429 184-70.857c60.571-3.429 120.571-2.857 181.143-2.857s120.571-0.571 181.143 2.857c70.286 3.429 132.571 19.429 184 70.857s67.429 113.714 70.857 184c3.429 60.571 2.857 120.571 2.857 181.143z"></path>
+                  </svg>
+                  <svg
+                    viewBox="0 0 602.2582857142856 1024"
+                    className="home-icon08"
+                  >
+                    <path d="M548 6.857v150.857h-89.714c-70.286 0-83.429 33.714-83.429 82.286v108h167.429l-22.286 169.143h-145.143v433.714h-174.857v-433.714h-145.714v-169.143h145.714v-124.571c0-144.571 88.571-223.429 217.714-223.429 61.714 0 114.857 4.571 130.286 6.857z"></path>
+                  </svg>
+                </div>
+              </div>
+              <div className="home-container02">
+                <div className="home-get-started">
+                  <span className="home-text10">
+                    833-924-2571
+                    <span
+                      dangerouslySetInnerHTML={{
+                        __html: ' ',
+                      }}
+                    />
+                  </span>
+                </div>
+              </div>
+            </header>
+            <div className="home-menu">
+              <div id="mobile-menu" className="home-mobile-navigation">
+                <div className="home-links2">
+                  <span className="Link">Solutions</span>
+                  <span className="Link">How it works</span>
+                  <span className="Link">Prices</span>
+                </div>
+                <div id="close-mobile-menu" className="home-close-mobile-menu">
+                  <svg
+                    viewBox="0 0 804.5714285714286 1024"
+                    className="home-icon10"
+                  >
+                    <path d="M741.714 755.429c0 14.286-5.714 28.571-16 38.857l-77.714 77.714c-10.286 10.286-24.571 16-38.857 16s-28.571-5.714-38.857-16l-168-168-168 168c-10.286 10.286-24.571 16-38.857 16s-28.571-5.714-38.857-16l-77.714-77.714c-10.286-10.286-16-24.571-16-38.857s5.714-28.571 16-38.857l168-168-168-168c-10.286-10.286-16-24.571-16-38.857s5.714-28.571 16-38.857l77.714-77.714c10.286-10.286 24.571-16 38.857-16s28.571 5.714 38.857 16l168 168 168-168c10.286-10.286 24.571-16 38.857-16s28.571 5.714 38.857 16l77.714 77.714c10.286 10.286 16 24.571 16 38.857s-5.714 28.571-16 38.857l-168 168 168 168c10.286 10.286 16 24.571 16 38.857z"></path>
+                  </svg>
+                </div>
+              </div>
+              <div>
+                <Script
+                  html={`<script>
 /*
 Mobile menu - Code Embed
 */
@@ -70,68 +137,69 @@ closeButton.addEventListener("click", function() {
     mobileMenu.style.transform = "translateX(100%)"
 })
 </script>`}
-              ></Script>
+                ></Script>
+              </div>
             </div>
           </div>
           <header className="home-header">
-            <h1 className="home-text07">Your co-pilot for expert calls</h1>
-            <p className="home-text08">
+            <h1 className="home-text14">Your co-pilot for expert calls</h1>
+            <p className="home-text15">
               Save time taking notes, synthesizing notes, and extracting
               insights from expert calls
             </p>
             <div className="home-get-started1">
-              <span className="home-text09">
+              <span className="home-text16">
                 Text &quot;Hi&quot; to 833-924-2571 to get started
               </span>
             </div>
           </header>
         </section>
         <section className="home-features">
-          <span className="home-text10">
+          <span className="home-text17">
             Let&apos;s save you the time and headache of expert calls
           </span>
           <div className="home-title">
-            <span className="home-text11">
+            <span className="home-text18">
               So that you can get get back to more exciting parts of your day
             </span>
           </div>
           <div className="home-cards">
-            <div className="home-container1">
+            <div className="home-container03">
               <div className="home-schedule card">
-                <svg viewBox="0 0 1024 1024" className="home-icon02">
+                <svg viewBox="0 0 1024 1024" className="home-icon12">
                   <path d="M738 470h72q0 108-75 189t-181 97v140h-84v-140q-106-16-181-97t-75-189h72q0 94 67 155t159 61 159-61 67-155zM512 598q-52 0-90-38t-38-90v-256q0-52 38-90t90-38 90 38 38 90v256q0 52-38 90t-90 38z"></path>
                 </svg>
-                <span className="home-text12">Record</span>
-                <span className="home-text13">
+                <span className="home-text19">Record</span>
+                <span className="home-text20">
                   Record calls to play back and listen to later when you have
                   more time
                 </span>
               </div>
               <div className="home-publish card">
-                <svg viewBox="0 0 1024 1024" className="home-icon04">
+                <svg viewBox="0 0 1024 1024" className="home-icon14">
                   <path d="M810 298v-84h-426v84h426zM640 640v-86h-256v86h256zM810 470v-86h-426v86h426zM854 86q34 0 59 25t25 59v512q0 34-25 60t-59 26h-512q-34 0-60-26t-26-60v-512q0-34 26-59t60-25h512zM170 256v598h598v84h-598q-34 0-59-25t-25-59v-598h84z"></path>
                 </svg>
-                <span className="home-text14">Transcribe</span>
-                <span className="home-text15">
+                <span className="home-text21">Transcribe</span>
+                <span className="home-text22">
                   Best-in-class AI transcription so you can spend less time
                   taking notes and more time asking the right questions
                 </span>
               </div>
             </div>
-            <div className="home-container2">
+            <div className="home-container04">
               <div className="home-analyze card">
-                <svg viewBox="0 0 1024 1024" className="home-icon06">
+                <svg viewBox="0 0 1024 1024" className="home-icon16">
                   <path d="M406 598q80 0 136-56t56-136-56-136-136-56-136 56-56 136 56 136 136 56zM662 598l212 212-64 64-212-212v-34l-12-12q-76 66-180 66-116 0-197-80t-81-196 81-197 197-81 196 81 80 197q0 42-20 95t-46 85l12 12h34z"></path>
                 </svg>
-                <span className="home-text16">Search &amp; Extract</span>
-                <span className="home-text17">
+                <span className="home-text23">Search &amp; Extract</span>
+                <span className="home-text24">
                   <span>
                     Instantly request and get quotes from most relevant topics
                     discussed on your calls
                   </span>
                   <br></br>
                   <br></br>
-                  <span className="home-text21">
+                  <span className="home-text28">
                     &quot;Give me a quote about the expert&apos;s perspective on
                     the market&apos;s size and growth prospects in the
                     future&quot;
@@ -139,11 +207,11 @@ closeButton.addEventListener("click", function() {
                 </span>
               </div>
               <div className="home-get-leads card">
-                <svg viewBox="0 0 1024 1024" className="home-icon08">
+                <svg viewBox="0 0 1024 1024" className="home-icon18">
                   <path d="M768 342v-86h-342v86h342zM768 470v-86h-342v86h342zM640 598v-86h-214v86h214zM342 342v-86h-86v86h86zM342 470v-86h-86v86h86zM342 598v-86h-86v86h86zM854 86q34 0 59 25t25 59v512q0 34-25 60t-59 26h-598l-170 170v-768q0-34 25-59t59-25h684z"></path>
                 </svg>
-                <span className="home-text22">Synthesize</span>
-                <span className="home-text23">
+                <span className="home-text29">Synthesize</span>
+                <span className="home-text30">
                   Automatic summarization of the most important takeaways from
                   your calls to easily save and share with team members
                 </span>
@@ -152,21 +220,21 @@ closeButton.addEventListener("click", function() {
           </div>
         </section>
         <section className="home-how-it-works">
-          <span className="home-text24">
+          <span className="home-text31">
             Getting started has never been easier
           </span>
           <div className="home-cards1">
-            <div className="home-container3">
+            <div className="home-container05">
               <div className="home-schedule1 card">
-                <span className="home-text25">1 - Sign Up</span>
-                <span className="home-text26">
-                  <span className="home-text27">
+                <span className="home-text32">1 - Sign Up</span>
+                <span className="home-text33">
+                  <span className="home-text34">
                     Text &quot;Hi&quot; to 833-924-2571
                   </span>
                   <br></br>
                 </span>
-                <span className="home-text29">
-                  <span className="home-text30">
+                <span className="home-text36">
+                  <span className="home-text37">
                     Provide the email address to receive call recordings and
                     transcripts.
                     <span
@@ -177,56 +245,59 @@ closeButton.addEventListener("click", function() {
                   </span>
                   <br></br>
                 </span>
-                <span className="home-text32">
+                <span className="home-text39">
                   Save phone number as &quot;MyScribe&quot; contact for easy
                   access
                 </span>
               </div>
-              <div className="home-container4"></div>
+              <div className="home-container06"></div>
             </div>
           </div>
           <div className="home-cards2">
-            <div className="home-container5">
+            <div className="home-container07">
               <div className="home-schedule2 card">
-                <span className="home-text33">2- Call</span>
-                <span className="home-text34">
-                  <span className="home-text35">
+                <span className="home-text40">2- Call</span>
+                <span className="home-text41">
+                  <span className="home-text42">
                     Call MyScribe at 833-924-2571 before your expert call
                   </span>
                   <br></br>
                 </span>
-                <span className="home-text37">
-                  <span className="home-text38">
+                <span className="home-text44">
+                  <span className="home-text45">
                     At the prompt, type in the phone number provided by the
-                    expert network and press pound.  
+                    network and press pound.  
                   </span>
                   <br></br>
                 </span>
-                <span className="home-text40">
-                  Conduct the phone call and hang up at the end as normal 
+                <span className="home-text47">
+                  <span className="home-text48">
+                    Conduct the phone call and hang up at the end as normal 
+                  </span>
+                  <br></br>
                 </span>
               </div>
-              <div className="home-container6"></div>
+              <div className="home-container08"></div>
             </div>
-            <div className="home-container7">
+            <div className="home-container09">
               <div className="home-schedule3 card">
-                <span className="home-text41">3- Email</span>
-                <span className="home-text42">
-                  <span className="home-text43">
+                <span className="home-text50">3- Email</span>
+                <span className="home-text51">
+                  <span className="home-text52">
                     5-10 mins after the call, you will receive an email with the
                     call recording, transcript, and takeaways from MyScribe
                   </span>
                   <br></br>
                 </span>
-                <span className="home-text45">
-                  <span className="home-text46">
+                <span className="home-text54">
+                  <span className="home-text55">
                     Respond to the email to chat with your call transcript and
                     ask specific questions such as: 
                   </span>
                   <br></br>
                 </span>
-                <span className="home-text48">
-                  <span className="home-text49">
+                <span className="home-text57">
+                  <span className="home-text58">
                     &quot;Provide a quote that caputures the expert&apos;s
                     perspective on the competitive landscape in the
                     market&quot; 
@@ -234,21 +305,21 @@ closeButton.addEventListener("click", function() {
                   <br></br>
                 </span>
               </div>
-              <div className="home-container8"></div>
+              <div className="home-container10"></div>
             </div>
           </div>
         </section>
         <section className="home-banners"></section>
         <section className="home-faq">
           <div className="home-heading">
-            <span className="home-text51 title">
+            <span className="home-text60 title">
               Frequently asked questions
             </span>
           </div>
           <div className="home-accordion">
             <div data-faq="closed" className="accordionContainer">
               <div className="home-header1">
-                <span className="home-text52">
+                <span className="home-text61">
                   — Is the information discussed in my expert calls secure while
                   using MyScribe?
                   <span
@@ -262,7 +333,7 @@ closeButton.addEventListener("click", function() {
                 </svg>
               </div>
               <div className="accordionContent">
-                <span className="home-text53">
+                <span className="home-text62">
                   MyScribe does not store any interactions, transcripts, or any
                   other information for 3rd party use. All transcripts are
                   secure and for your use only. All AI-based features in the app
@@ -274,7 +345,7 @@ closeButton.addEventListener("click", function() {
             </div>
             <div className="accordionContainer">
               <div className="home-header2">
-                <span className="home-text54">
+                <span className="home-text63">
                   — What if I have concerns about recording expert calls? 
                 </span>
                 <svg viewBox="0 0 1024 1024" className="accordionIcon">
@@ -282,7 +353,7 @@ closeButton.addEventListener("click", function() {
                 </svg>
               </div>
               <div className="accordionContent">
-                <span className="home-text55">
+                <span className="home-text64">
                   If you have any questions or concerns about recording expert
                   calls we encourage you to obtain consent from your expert at
                   the beginning of the call. Many expert networks screen experts
@@ -294,7 +365,7 @@ closeButton.addEventListener("click", function() {
             </div>
             <div data-faq="closed" className="accordionContainer">
               <div className="home-header3">
-                <span className="home-text56">
+                <span className="home-text65">
                   — Is MyScribe a replacement for my expert network providers?
                   <span
                     dangerouslySetInnerHTML={{
@@ -307,7 +378,7 @@ closeButton.addEventListener("click", function() {
                 </svg>
               </div>
               <div className="accordionContent">
-                <span className="home-text57">
+                <span className="home-text66">
                   MyScribe does not replace expert network providers. MyScribe
                   is intended to make the calls you pay for and schedule with
                   your expert networks easier to extract information from! As
@@ -384,9 +455,9 @@ Here's what the above is doing:
           </div>
         </section>
         <footer className="home-footer">
-          <div className="home-top">
-            <div className="home-left2">
-              <span className="home-text58">
+          <div className="home-top1">
+            <div className="home-left">
+              <span className="home-text67">
                 By signing up with our product you agree with our Terms and
                 Conditions.
               </span>
@@ -395,10 +466,10 @@ Here's what the above is doing:
           <div className="home-bottom">
             <img
               alt="pastedImage"
-              src="/myscribe-1-2-200h.png"
+              src="/myscribe-1-2-1500h.png"
               className="home-branding"
             />
-            <span className="home-text59">Copyright © Active - 2022</span>
+            <span className="home-text68">Copyright © Active - 2022</span>
           </div>
         </footer>
       </div>
@@ -424,6 +495,181 @@ Here's what the above is doing:
             padding-bottom: var(--dl-space-space-fourunits);
             background-color: #5228f5;
           }
+          .home-container01 {
+            flex: 0 0 auto;
+            width: auto;
+            height: auto;
+            display: flex;
+            align-items: flex-start;
+            justify-content: center;
+          }
+          .home-navbar-interactive {
+            width: 100%;
+            display: flex;
+            transition: 0.3s;
+            align-items: center;
+            padding-top: var(--dl-space-space-twounits);
+            padding-left: var(--dl-space-space-threeunits);
+            padding-right: var(--dl-space-space-threeunits);
+            padding-bottom: var(--dl-space-space-twounits);
+            justify-content: space-between;
+            background-color: #fffcfc;
+          }
+
+          .home-image {
+            height: 2rem;
+            margin-right: var(--dl-space-space-fourunits);
+          }
+          .home-desktop-menu {
+            flex: 1;
+            display: flex;
+            justify-content: space-between;
+          }
+          .home-links {
+            flex: 1;
+            display: flex;
+            align-items: center;
+            flex-direction: row;
+            justify-content: center;
+          }
+          .home-text {
+            font-size: 20px;
+          }
+          .home-text01 {
+            font-size: 20px;
+            margin-left: var(--dl-space-space-twounits);
+          }
+          .home-text02 {
+            margin-left: var(--dl-space-space-twounits);
+          }
+          .home-text03 {
+            font-size: 20px;
+          }
+          .home-burger-menu {
+            display: none;
+          }
+          .home-icon {
+            width: var(--dl-size-size-xsmall);
+            height: var(--dl-size-size-xsmall);
+          }
+          .home-mobile-menu {
+            top: 0px;
+            left: 0px;
+            width: 100%;
+            height: 100vh;
+            display: none;
+            padding: 32px;
+            z-index: 100;
+            position: absolute;
+            flex-direction: column;
+            justify-content: space-between;
+            background-color: #fff;
+          }
+          .home-nav {
+            display: flex;
+            align-items: flex-start;
+            flex-direction: column;
+          }
+          .home-top {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            margin-bottom: var(--dl-space-space-threeunits);
+            justify-content: space-between;
+          }
+          .home-logo {
+            height: 2rem;
+          }
+          .home-close-menu {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+          }
+          .home-icon02 {
+            width: var(--dl-size-size-xsmall);
+            height: var(--dl-size-size-xsmall);
+          }
+          .home-links1 {
+            flex: 0 0 auto;
+            display: flex;
+            align-self: flex-start;
+            align-items: flex-start;
+            flex-direction: column;
+          }
+          .home-text05 {
+            margin-bottom: var(--dl-space-space-unit);
+          }
+          .home-text06 {
+            margin-bottom: var(--dl-space-space-unit);
+          }
+          .home-text07 {
+            margin-bottom: var(--dl-space-space-unit);
+          }
+          .home-text08 {
+            margin-bottom: var(--dl-space-space-unit);
+          }
+          .home-text09 {
+            margin-bottom: var(--dl-space-space-unit);
+          }
+          .home-buttons {
+            display: flex;
+            margin-top: var(--dl-space-space-unit);
+            align-items: center;
+            flex-direction: row;
+            justify-content: space-between;
+          }
+          .home-login {
+            margin-right: var(--dl-space-space-twounits);
+          }
+          .home-icon04 {
+            width: var(--dl-size-size-xsmall);
+            height: var(--dl-size-size-xsmall);
+            margin-right: var(--dl-space-space-twounits);
+          }
+          .home-icon06 {
+            width: var(--dl-size-size-xsmall);
+            height: var(--dl-size-size-xsmall);
+            margin-right: var(--dl-space-space-twounits);
+          }
+          .home-icon08 {
+            width: var(--dl-size-size-xsmall);
+            height: var(--dl-size-size-xsmall);
+          }
+          .home-container02 {
+            flex: 0 0 auto;
+            width: auto;
+            display: flex;
+            align-items: flex-start;
+            flex-direction: column;
+          }
+          .home-get-started {
+            color: white;
+            cursor: pointer;
+            display: flex;
+            align-self: center;
+            margin-top: 0px;
+            transition: 0.3s;
+            align-items: center;
+            margin-left: var(--dl-space-space-threeunits);
+            padding-top: var(--dl-space-space-unit);
+            padding-left: var(--dl-space-space-twounits);
+            border-radius: 56px;
+            padding-right: var(--dl-space-space-twounits);
+            flex-direction: column;
+            padding-bottom: var(--dl-space-space-unit);
+            background-color: #000000;
+          }
+          .home-get-started:hover {
+            color: black;
+            background-color: #ffffff;
+          }
+          .home-text10 {
+            font-size: 16px;
+            font-style: normal;
+            text-align: center;
+            font-weight: 600;
+            line-height: 1.15;
+          }
           .home-menu {
             width: auto;
             display: flex;
@@ -448,7 +694,7 @@ Here's what the above is doing:
             flex-direction: column;
             background-color: var(--dl-color-gray-white);
           }
-          .home-links {
+          .home-links2 {
             gap: var(--dl-space-space-twounits);
             display: flex;
             align-self: center;
@@ -467,111 +713,10 @@ Here's what the above is doing:
             flex-direction: column;
             justify-content: center;
           }
-          .home-icon {
+          .home-icon10 {
             width: 24px;
             height: 24px;
             display: flex;
-          }
-          .home-desktop-navigation {
-            width: 100%;
-            height: 100%;
-            display: flex;
-            align-self: center;
-            margin-top: 0px;
-            align-items: center;
-            flex-direction: column;
-          }
-          .home-centered {
-            width: 75%;
-            height: auto;
-            display: flex;
-            max-width: 75%;
-            box-sizing: initial;
-            align-items: center;
-            padding-left: var(--dl-space-space-oneandhalfunits);
-            border-radius: 50px;
-            padding-right: var(--dl-space-space-oneandhalfunits);
-            flex-direction: row;
-            justify-content: space-between;
-            background-color: #ffffff;
-          }
-          .home-left {
-            width: 100%;
-            height: 100%;
-            display: flex;
-            align-items: center;
-            padding-top: 0px;
-            flex-direction: row;
-            padding-bottom: 0px;
-            justify-content: flex-start;
-          }
-          .home-image {
-            flex: initial;
-            width: auto;
-            height: 40%;
-            align-self: center;
-            object-fit: cover;
-          }
-          .home-links1 {
-            width: auto;
-            height: 100%;
-            display: flex;
-            align-items: center;
-            margin-left: var(--dl-space-space-oneandhalfunits);
-            margin-right: var(--dl-space-space-oneandhalfunits);
-            flex-direction: row;
-          }
-          .home-text03 {
-            font-size: 16px;
-            line-height: 1.15;
-            margin-left: 40px;
-          }
-          .home-text04 {
-            font-size: 16px;
-            line-height: 1.15;
-            margin-left: 40px;
-          }
-          .home-text05 {
-            font-size: 16px;
-            line-height: 1.15;
-            margin-left: 40px;
-            letter-spacing: auto;
-          }
-          .home-left1 {
-            width: 100%;
-            height: 100%;
-            display: flex;
-            align-items: center;
-            padding-top: 0px;
-            flex-direction: row;
-            padding-bottom: 0px;
-            justify-content: flex-start;
-          }
-          .home-get-started {
-            width: 100%;
-            cursor: pointer;
-            display: flex;
-            transition: 0.3s;
-            align-items: center;
-            padding-top: var(--dl-space-space-unit);
-            padding-left: var(--dl-space-space-oneandhalfunits);
-            border-radius: 56px;
-            padding-right: var(--dl-space-space-oneandhalfunits);
-            flex-direction: column;
-            padding-bottom: var(--dl-space-space-unit);
-            justify-content: center;
-            background-color: #000000;
-          }
-          .home-get-started:hover {
-            background-color: #5228f5;
-          }
-          .home-text06 {
-            color: rgb(255, 255, 255);
-            font-size: autopx;
-            font-style: normal;
-            text-align: center;
-            font-weight: 600;
-            line-height: 1.15;
           }
           .home-header {
             display: flex;
@@ -579,7 +724,7 @@ Here's what the above is doing:
             align-items: center;
             flex-direction: column;
           }
-          .home-text07 {
+          .home-text14 {
             color: rgb(255, 255, 255);
             font-size: 72px;
             font-style: normal;
@@ -587,7 +732,7 @@ Here's what the above is doing:
             font-weight: 700;
             line-height: 80px;
           }
-          .home-text08 {
+          .home-text15 {
             color: rgb(238, 233, 254);
             font-size: 20px;
             max-width: 600px;
@@ -614,7 +759,7 @@ Here's what the above is doing:
             color: black;
             background-color: #ffffff;
           }
-          .home-text09 {
+          .home-text16 {
             font-size: 24px;
             font-style: normal;
             text-align: center;
@@ -633,7 +778,7 @@ Here's what the above is doing:
             flex-direction: column;
             background-color: EFF0F2;
           }
-          .home-text10 {
+          .home-text17 {
             font-size: 56px;
             font-style: normal;
             text-align: center;
@@ -645,7 +790,7 @@ Here's what the above is doing:
             align-items: center;
             flex-direction: column;
           }
-          .home-text11 {
+          .home-text18 {
             font-size: 20px;
             margin-top: 16px;
             text-align: center;
@@ -659,7 +804,7 @@ Here's what the above is doing:
             align-items: center;
             flex-direction: column;
           }
-          .home-container1 {
+          .home-container03 {
             gap: var(--dl-space-space-twounits);
             width: 100%;
             display: flex;
@@ -671,42 +816,42 @@ Here's what the above is doing:
             height: auto;
             padding-top: 28px;
           }
-          .home-icon02 {
+          .home-icon12 {
             width: var(--dl-size-size-small);
             height: var(--dl-size-size-small);
             margin-bottom: var(--dl-space-space-oneandhalfunits);
           }
-          .home-text12 {
+          .home-text19 {
             font-size: 28px;
             font-style: normal;
             font-weight: 700;
             line-height: 33px;
             margin-bottom: var(--dl-space-space-unit);
           }
-          .home-text13 {
+          .home-text20 {
             line-height: 24px;
           }
           .home-publish {
             height: auto;
             padding-top: var(--dl-space-space-oneandhalfunits);
           }
-          .home-icon04 {
+          .home-icon14 {
             width: var(--dl-size-size-small);
             height: var(--dl-size-size-small);
             align-self: flex-start;
             margin-bottom: var(--dl-space-space-oneandhalfunits);
           }
-          .home-text14 {
+          .home-text21 {
             font-size: 28px;
             font-style: normal;
             font-weight: 700;
             line-height: 33px;
             margin-bottom: var(--dl-space-space-unit);
           }
-          .home-text15 {
+          .home-text22 {
             line-height: 24px;
           }
-          .home-container2 {
+          .home-container04 {
             gap: var(--dl-space-space-twounits);
             width: 100%;
             display: flex;
@@ -718,41 +863,41 @@ Here's what the above is doing:
             height: auto;
             padding-top: var(--dl-space-space-oneandhalfunits);
           }
-          .home-icon06 {
+          .home-icon16 {
             width: var(--dl-size-size-small);
             height: var(--dl-size-size-small);
             margin-bottom: var(--dl-space-space-oneandhalfunits);
           }
-          .home-text16 {
+          .home-text23 {
             font-size: 28px;
             font-style: normal;
             font-weight: 700;
             line-height: 33px;
             margin-bottom: 16px;
           }
-          .home-text17 {
+          .home-text24 {
             line-height: 24px;
           }
-          .home-text21 {
+          .home-text28 {
             font-style: italic;
           }
           .home-get-leads {
             height: auto;
             padding-top: var(--dl-space-space-oneandhalfunits);
           }
-          .home-icon08 {
+          .home-icon18 {
             width: var(--dl-size-size-small);
             height: var(--dl-size-size-small);
             margin-bottom: var(--dl-space-space-oneandhalfunits);
           }
-          .home-text22 {
+          .home-text29 {
             font-size: 28px;
             font-style: normal;
             font-weight: 700;
             line-height: 33px;
             margin-bottom: var(--dl-space-space-unit);
           }
-          .home-text23 {
+          .home-text30 {
             line-height: 24px;
           }
           .home-how-it-works {
@@ -769,7 +914,7 @@ Here's what the above is doing:
             padding-bottom: 137px;
             background-color: #211062;
           }
-          .home-text24 {
+          .home-text31 {
             color: rgb(251, 250, 250);
             font-size: 56px;
             font-style: normal;
@@ -787,7 +932,7 @@ Here's what the above is doing:
             margin-bottom: var(--dl-space-space-twounits);
             flex-direction: column;
           }
-          .home-container3 {
+          .home-container05 {
             gap: var(--dl-space-space-twounits);
             width: 100%;
             display: flex;
@@ -803,7 +948,7 @@ Here's what the above is doing:
             padding-top: 2px;
             padding-right: var(--dl-space-space-oneandhalfunits);
           }
-          .home-text25 {
+          .home-text32 {
             width: 75%;
             font-size: 35px;
             font-style: normal;
@@ -813,7 +958,7 @@ Here's what the above is doing:
             margin-bottom: var(--dl-space-space-twounits);
             padding-bottom: 0px;
           }
-          .home-text26 {
+          .home-text33 {
             font-size: 24px;
             align-self: flex-start;
             line-height: 24px;
@@ -822,22 +967,22 @@ Here's what the above is doing:
             padding-right: 0px;
             padding-bottom: 12px;
           }
-          .home-text27 {
+          .home-text34 {
             font-style: normal;
             font-weight: 600;
           }
-          .home-text29 {
+          .home-text36 {
             font-size: 24px;
             align-self: flex-start;
             line-height: 24px;
             padding-top: 12px;
             padding-bottom: 12px;
           }
-          .home-text30 {
+          .home-text37 {
             font-style: normal;
             font-weight: 600;
           }
-          .home-text32 {
+          .home-text39 {
             font-size: 24px;
             align-self: flex-start;
             font-style: normal;
@@ -847,7 +992,7 @@ Here's what the above is doing:
             margin-bottom: var(--dl-space-space-threeunits);
             padding-bottom: 12px;
           }
-          .home-container4 {
+          .home-container06 {
             width: 25%;
             height: 100%;
             display: flex;
@@ -867,7 +1012,7 @@ Here's what the above is doing:
             align-items: center;
             flex-direction: column;
           }
-          .home-container5 {
+          .home-container07 {
             gap: var(--dl-space-space-twounits);
             width: 100%;
             height: 320px;
@@ -884,7 +1029,7 @@ Here's what the above is doing:
             padding-right: var(--dl-space-space-oneandhalfunits);
             padding-bottom: 42px;
           }
-          .home-text33 {
+          .home-text40 {
             width: 75%;
             font-size: 35px;
             font-style: normal;
@@ -894,7 +1039,7 @@ Here's what the above is doing:
             margin-bottom: var(--dl-space-space-twounits);
             padding-bottom: 0px;
           }
-          .home-text34 {
+          .home-text41 {
             font-size: 24px;
             align-self: flex-start;
             line-height: 24px;
@@ -903,22 +1048,22 @@ Here's what the above is doing:
             padding-right: 0px;
             padding-bottom: 12px;
           }
-          .home-text35 {
+          .home-text42 {
             font-style: normal;
             font-weight: 600;
           }
-          .home-text37 {
+          .home-text44 {
             font-size: 24px;
             align-self: flex-start;
             line-height: 24px;
             padding-top: 12px;
             padding-bottom: 12px;
           }
-          .home-text38 {
+          .home-text45 {
             font-style: normal;
             font-weight: 600;
           }
-          .home-text40 {
+          .home-text47 {
             font-size: 24px;
             align-self: flex-start;
             font-style: normal;
@@ -928,7 +1073,11 @@ Here's what the above is doing:
             margin-bottom: var(--dl-space-space-threeunits);
             padding-bottom: 12px;
           }
-          .home-container6 {
+          .home-text48 {
+            align-self: flex-start;
+            margin-bottom: var(--dl-space-space-threeunits);
+          }
+          .home-container08 {
             gap: var(--dl-space-space-twounits);
             width: 25%;
             height: 100%;
@@ -942,7 +1091,7 @@ Here's what the above is doing:
             justify-content: flex-end;
             background-image: url('/asset%2011-200w.png');
           }
-          .home-container7 {
+          .home-container09 {
             gap: var(--dl-space-space-twounits);
             width: 100%;
             height: 400px;
@@ -960,7 +1109,7 @@ Here's what the above is doing:
             padding-top: var(--dl-space-space-halfunit);
             padding-right: var(--dl-space-space-oneandhalfunits);
           }
-          .home-text41 {
+          .home-text50 {
             width: 75%;
             font-size: 35px;
             font-style: normal;
@@ -970,7 +1119,7 @@ Here's what the above is doing:
             margin-bottom: var(--dl-space-space-twounits);
             padding-bottom: 0px;
           }
-          .home-text42 {
+          .home-text51 {
             font-size: 24px;
             align-self: flex-start;
             line-height: 24px;
@@ -979,22 +1128,22 @@ Here's what the above is doing:
             padding-right: 0px;
             padding-bottom: 12px;
           }
-          .home-text43 {
+          .home-text52 {
             font-style: normal;
             font-weight: 600;
           }
-          .home-text45 {
+          .home-text54 {
             font-size: 24px;
             align-self: flex-start;
             line-height: 24px;
             padding-top: 12px;
             padding-bottom: 12px;
           }
-          .home-text46 {
+          .home-text55 {
             font-style: normal;
             font-weight: 600;
           }
-          .home-text48 {
+          .home-text57 {
             color: var(--dl-color-gray-black);
             font-size: 24px;
             align-self: flex-start;
@@ -1005,11 +1154,11 @@ Here's what the above is doing:
             padding-bottom: 12px;
             background-color: var(--dl-color-gray-white);
           }
-          .home-text49 {
+          .home-text58 {
             font-style: italic;
             font-weight: 400;
           }
-          .home-container8 {
+          .home-container10 {
             width: 25%;
             height: 100%;
             display: flex;
@@ -1048,7 +1197,7 @@ Here's what the above is doing:
             user-select: none;
             flex-direction: column;
           }
-          .home-text51 {
+          .home-text60 {
             text-align: center;
           }
           .home-accordion {
@@ -1065,14 +1214,14 @@ Here's what the above is doing:
             display: flex;
             justify-content: space-between;
           }
-          .home-text52 {
+          .home-text61 {
             width: 100%;
             font-size: 20px;
             max-width: 760px;
             font-style: normal;
             font-weight: 500;
           }
-          .home-text53 {
+          .home-text62 {
             width: 100%;
             max-width: 760px;
             line-height: 24px;
@@ -1082,14 +1231,14 @@ Here's what the above is doing:
             display: flex;
             justify-content: space-between;
           }
-          .home-text54 {
+          .home-text63 {
             width: 100%;
             font-size: 20px;
             max-width: 760px;
             font-style: normal;
             font-weight: 500;
           }
-          .home-text55 {
+          .home-text64 {
             width: 100%;
             max-width: 760px;
             line-height: 24px;
@@ -1099,14 +1248,14 @@ Here's what the above is doing:
             display: flex;
             justify-content: space-between;
           }
-          .home-text56 {
+          .home-text65 {
             width: 100%;
             font-size: 20px;
             max-width: 760px;
             font-style: normal;
             font-weight: 500;
           }
-          .home-text57 {
+          .home-text66 {
             width: 100%;
             max-width: 760px;
             line-height: 24px;
@@ -1125,7 +1274,7 @@ Here's what the above is doing:
             padding-bottom: var(--dl-space-space-sevenunits);
             background-color: #000000;
           }
-          .home-top {
+          .home-top1 {
             width: 100%;
             height: 43px;
             display: flex;
@@ -1136,14 +1285,14 @@ Here's what the above is doing:
             justify-content: space-between;
             border-bottom-width: 1px;
           }
-          .home-left2 {
+          .home-left {
             width: 521px;
             display: flex;
             align-items: flex-start;
             margin-right: var(--dl-space-space-twounits);
             flex-direction: column;
           }
-          .home-text58 {
+          .home-text67 {
             color: rgb(104, 104, 104);
             font-size: 14px;
           }
@@ -1162,7 +1311,7 @@ Here's what the above is doing:
               brightness(103%) contrast(103%);
             margin-bottom: var(--dl-space-space-unit);
           }
-          .home-text59 {
+          .home-text68 {
             color: #686868;
             font-size: 14px;
             line-height: 30px;
@@ -1176,35 +1325,14 @@ Here's what the above is doing:
               align-items: center;
               justify-content: center;
             }
-            .home-desktop-navigation {
-              padding-left: var(--dl-space-space-oneandhalfunits);
-              padding-right: var(--dl-space-space-oneandhalfunits);
-            }
-            .home-centered {
-              height: 60px;
-              padding-left: 10px;
-              padding-right: 10px;
-            }
-            .home-left {
-              margin-left: var(--dl-space-space-halfunit);
-            }
-            .home-links1 {
-              display: none;
-            }
-            .home-left1 {
-              margin-left: var(--dl-space-space-halfunit);
-            }
-            .home-get-started {
-              display: none;
-            }
             .home-header {
               width: 100%;
               max-width: 1200px;
             }
             .home-features {
-              padding-top: 260px;
+              padding-top: var(--dl-space-space-fourunits);
             }
-            .home-text10 {
+            .home-text17 {
               font-size: 36px;
               line-height: 40px;
             }
@@ -1212,7 +1340,7 @@ Here's what the above is doing:
               width: 100%;
               max-width: 1200px;
             }
-            .home-text11 {
+            .home-text18 {
               font-size: 20px;
               margin-top: var(--dl-space-space-unit);
               line-height: 30px;
@@ -1220,62 +1348,80 @@ Here's what the above is doing:
             .home-cards {
               margin-top: var(--dl-space-space-fiveunits);
             }
-            .home-text13 {
-              line-height: 21px;
-            }
-            .home-text15 {
-              line-height: 21px;
-            }
-            .home-text17 {
+            .home-text20 {
               line-height: 21px;
             }
             .home-text22 {
-              font-size: 24px;
-            }
-            .home-text23 {
               line-height: 21px;
             }
             .home-text24 {
+              line-height: 21px;
+            }
+            .home-text29 {
+              font-size: 24px;
+            }
+            .home-text30 {
+              line-height: 21px;
+            }
+            .home-text31 {
               font-size: 36px;
               line-height: 40px;
             }
             .home-cards1 {
               margin-top: var(--dl-space-space-fiveunits);
             }
-            .home-text26 {
+            .home-text33 {
               line-height: 21px;
             }
-            .home-text29 {
+            .home-text36 {
               line-height: 21px;
             }
-            .home-text32 {
+            .home-text39 {
               line-height: 21px;
             }
             .home-cards2 {
               margin-top: var(--dl-space-space-fiveunits);
             }
-            .home-text34 {
+            .home-schedule2 {
+              height: 100%;
+              padding-bottom: 0px;
+            }
+            .home-text41 {
               line-height: 21px;
             }
-            .home-text37 {
-              line-height: 21px;
-            }
-            .home-text40 {
-              line-height: 21px;
-            }
-            .home-text42 {
-              line-height: 21px;
-            }
-            .home-text43 {
+            .home-text44 {
+              font-size: 24px;
               line-height: 21px;
             }
             .home-text45 {
+              font-style: normal;
+              font-weight: 600;
+            }
+            .home-text47 {
+              font-size: 24px;
+              font-style: normal;
+              font-weight: 600;
               line-height: 21px;
+              padding-top: 0px;
+              margin-bottom: var(--dl-space-space-fiveunits);
+              padding-bottom: 0px;
             }
             .home-text48 {
+              margin-bottom: var(--dl-space-space-fiveunits);
+            }
+            .home-text51 {
               line-height: 21px;
             }
-            .home-text49 {
+            .home-text52 {
+              line-height: 21px;
+            }
+            .home-text54 {
+              line-height: 21px;
+            }
+            .home-text57 {
+              line-height: 21px;
+            }
+            .home-text58 {
               line-height: 21px;
             }
             .home-accordion {
@@ -1285,15 +1431,15 @@ Here's what the above is doing:
             .home-footer {
               padding: var(--dl-space-space-sixunits);
             }
-            .home-top {
+            .home-top1 {
               flex-direction: column;
             }
-            .home-left2 {
+            .home-left {
               width: 100%;
               margin-right: 0px;
               margin-bottom: var(--dl-space-space-threeunits);
             }
-            .home-text58 {
+            .home-text67 {
               color: rgb(104, 104, 104);
               font-size: 14px;
             }
@@ -1301,7 +1447,7 @@ Here's what the above is doing:
               width: var(--dl-size-size-medium);
               margin-bottom: var(--dl-space-space-halfunit);
             }
-            .home-text59 {
+            .home-text68 {
               font-size: 12px;
               line-height: 25px;
               margin-bottom: 0px;
@@ -1314,36 +1460,61 @@ Here's what the above is doing:
               padding-bottom: 180px;
               background-color: var(--dl-color-template-blue-bg);
             }
-            .home-desktop-navigation {
-              padding-left: 0px;
-              padding-right: 0px;
+            .home-navbar-interactive {
+              padding-left: var(--dl-space-space-twounits);
+              padding-right: var(--dl-space-space-twounits);
             }
-            .home-centered {
-              padding-left: 0px;
-              padding-right: 0px;
+            .home-image {
+              margin-right: var(--dl-space-space-halfunit);
             }
-            .home-left {
-              margin-left: var(--dl-space-space-unit);
+            .home-desktop-menu {
+              display: none;
             }
-            .home-left1 {
-              margin-left: var(--dl-space-space-unit);
+            .home-burger-menu {
+              display: flex;
+              align-items: center;
+              justify-content: center;
+            }
+            .home-text05 {
+              margin-bottom: var(--dl-space-space-unit);
+            }
+            .home-text06 {
+              margin-left: 0;
+              margin-bottom: var(--dl-space-space-unit);
+            }
+            .home-text07 {
+              margin-left: 0;
+              margin-bottom: var(--dl-space-space-unit);
+            }
+            .home-text08 {
+              margin-left: 0;
+              margin-bottom: var(--dl-space-space-unit);
+            }
+            .home-text09 {
+              margin-left: 0;
+              margin-bottom: var(--dl-space-space-unit);
+            }
+            .home-container02 {
+              align-items: center;
+              justify-content: center;
             }
             .home-get-started {
-              display: none;
+              margin-top: 0px;
+              margin-left: var(--dl-space-space-twounits);
             }
             .home-header {
               height: 100%;
               margin-top: var(--dl-space-space-fourunits);
               justify-content: center;
             }
-            .home-text07 {
+            .home-text14 {
               color: rgb(255, 255, 255);
               font-size: 32px;
               font-style: normal;
               font-weight: 700;
               line-height: 36px;
             }
-            .home-text08 {
+            .home-text15 {
               color: rgb(238, 233, 254);
               font-size: 16px;
               margin-top: var(--dl-space-space-unit);
@@ -1353,50 +1524,51 @@ Here's what the above is doing:
               margin-top: var(--dl-space-space-twounits);
             }
             .home-features {
-              padding-top: 350px;
+              margin-top: var(--dl-space-space-fourunits);
+              padding-top: 0px;
               padding-left: var(--dl-space-space-oneandhalfunits);
               padding-right: var(--dl-space-space-oneandhalfunits);
             }
-            .home-text10 {
+            .home-text17 {
               font-size: 36px;
               font-style: normal;
               font-weight: 700;
               line-height: 40px;
             }
-            .home-container1 {
+            .home-container03 {
               gap: var(--dl-space-space-oneandhalfunits);
               margin-bottom: var(--dl-space-space-oneandhalfunits);
               flex-direction: column;
             }
-            .home-text12 {
+            .home-text19 {
               font-size: 24px;
             }
-            .home-text13 {
+            .home-text20 {
               font-size: 14px;
             }
             .home-publish {
               margin-left: 0px;
             }
-            .home-text14 {
+            .home-text21 {
               font-size: 24px;
             }
-            .home-text15 {
+            .home-text22 {
               font-size: 14px;
             }
-            .home-container2 {
+            .home-container04 {
               gap: var(--dl-space-space-oneandhalfunits);
               flex-direction: column;
             }
             .home-analyze {
               margin-right: 0px;
             }
-            .home-text16 {
+            .home-text23 {
               font-size: 24px;
             }
-            .home-text17 {
+            .home-text24 {
               font-size: 14px;
             }
-            .home-text23 {
+            .home-text30 {
               font-size: 14px;
             }
             .home-how-it-works {
@@ -1405,67 +1577,73 @@ Here's what the above is doing:
               padding-right: var(--dl-space-space-oneandhalfunits);
               padding-bottom: var(--dl-space-space-fourunits);
             }
-            .home-text24 {
+            .home-text31 {
               font-size: 36px;
               font-style: normal;
               font-weight: 700;
               line-height: 40px;
             }
-            .home-container3 {
+            .home-container05 {
               gap: var(--dl-space-space-oneandhalfunits);
               margin-bottom: var(--dl-space-space-oneandhalfunits);
               flex-direction: column;
-            }
-            .home-text25 {
-              font-size: 24px;
-            }
-            .home-text26 {
-              font-size: 14px;
-            }
-            .home-text29 {
-              font-size: 14px;
             }
             .home-text32 {
-              font-size: 14px;
-            }
-            .home-container5 {
-              gap: var(--dl-space-space-oneandhalfunits);
-              margin-bottom: var(--dl-space-space-oneandhalfunits);
-              flex-direction: column;
+              font-size: 24px;
             }
             .home-text33 {
-              font-size: 24px;
-            }
-            .home-text34 {
               font-size: 14px;
             }
-            .home-text37 {
+            .home-text36 {
               font-size: 14px;
             }
-            .home-text40 {
+            .home-text39 {
               font-size: 14px;
             }
-            .home-container7 {
+            .home-container07 {
               gap: var(--dl-space-space-oneandhalfunits);
               margin-bottom: var(--dl-space-space-oneandhalfunits);
               flex-direction: column;
             }
-            .home-text41 {
+            .home-schedule2 {
+              padding-bottom: var(--dl-space-space-unit);
+            }
+            .home-text40 {
               font-size: 24px;
             }
-            .home-text42 {
+            .home-text41 {
               font-size: 14px;
             }
-            .home-text43 {
+            .home-text44 {
               font-size: 14px;
             }
-            .home-text45 {
+            .home-text47 {
               font-size: 14px;
             }
             .home-text48 {
               font-size: 14px;
             }
-            .home-text49 {
+            .home-container09 {
+              gap: var(--dl-space-space-oneandhalfunits);
+              margin-bottom: var(--dl-space-space-oneandhalfunits);
+              flex-direction: column;
+            }
+            .home-text50 {
+              font-size: 24px;
+            }
+            .home-text51 {
+              font-size: 14px;
+            }
+            .home-text52 {
+              font-size: 14px;
+            }
+            .home-text54 {
+              font-size: 14px;
+            }
+            .home-text57 {
+              font-size: 14px;
+            }
+            .home-text58 {
               font-size: 14px;
             }
             .home-faq {
@@ -1474,9 +1652,12 @@ Here's what the above is doing:
             .home-heading {
               width: 100%;
             }
-            .home-text51 {
+            .home-text60 {
               font-size: 36px;
               line-height: 36px;
+            }
+            .home-text61 {
+              margin-top: var(--dl-space-space-twounits);
             }
             .home-footer {
               padding-top: var(--dl-space-space-fourunits);
@@ -1486,41 +1667,69 @@ Here's what the above is doing:
           }
           @media (max-width: 479px) {
             .home-hero {
-              padding-bottom: 160px;
+              padding-top: var(--dl-space-space-halfunit);
+              padding-bottom: var(--dl-space-space-halfunit);
             }
-            .home-icon {
+            .home-navbar-interactive {
+              color: #f9f8f8;
+              padding: var(--dl-space-space-unit);
+            }
+            .home-image {
+              margin-right: var(--dl-space-space-halfunit);
+            }
+            .home-mobile-menu {
+              padding: 16px;
+            }
+            .home-get-started {
+              width: auto;
+              margin-top: 0px;
+              margin-left: var(--dl-space-space-halfunit);
+            }
+            .home-text10 {
+              line-height: 1.15;
+            }
+            .home-icon10 {
               align-items: center;
               justify-content: center;
             }
-            .home-text08 {
+            .home-header {
+              margin-top: 0px;
+            }
+            .home-text15 {
               color: #eee9fe;
             }
             .home-get-started1 {
               width: 100%;
             }
             .home-features {
-              padding-top: 200px;
+              padding-top: var(--dl-space-space-twounits);
+            }
+            .home-text17 {
+              font-size: 30px;
             }
             .home-cards {
               margin-top: var(--dl-space-space-threeunits);
               margin-bottom: var(--dl-space-space-threeunits);
             }
-            .home-container1 {
+            .home-container03 {
               gap: var(--dl-space-space-oneandhalfunits);
               margin-bottom: var(--dl-space-space-oneandhalfunits);
             }
-            .home-container2 {
+            .home-container04 {
               gap: var(--dl-space-space-oneandhalfunits);
               margin-bottom: 0px;
             }
             .home-analyze {
               margin-bottom: 0px;
             }
+            .home-text31 {
+              font-size: 30px;
+            }
             .home-cards1 {
               margin-top: var(--dl-space-space-threeunits);
               margin-bottom: var(--dl-space-space-threeunits);
             }
-            .home-container3 {
+            .home-container05 {
               gap: var(--dl-space-space-oneandhalfunits);
               margin-bottom: var(--dl-space-space-oneandhalfunits);
             }
@@ -1528,13 +1737,23 @@ Here's what the above is doing:
               margin-top: var(--dl-space-space-threeunits);
               margin-bottom: var(--dl-space-space-threeunits);
             }
-            .home-container5 {
+            .home-container07 {
               gap: var(--dl-space-space-oneandhalfunits);
               margin-bottom: var(--dl-space-space-oneandhalfunits);
             }
-            .home-container7 {
-              gap: var(--dl-space-space-oneandhalfunits);
-              margin-bottom: var(--dl-space-space-oneandhalfunits);
+            .home-schedule2 {
+              padding-top: 0px;
+            }
+            .home-container09 {
+              gap: 0;
+              margin-top: 0px;
+              margin-bottom: 0px;
+            }
+            .home-schedule3 {
+              margin-top: 0px;
+            }
+            .home-faq {
+              height: auto;
             }
             .home-footer {
               padding-left: var(--dl-space-space-unit);
