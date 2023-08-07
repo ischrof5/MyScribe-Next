@@ -983,7 +983,7 @@ Here's what the above is doing:
             font-weight: 600;
           }
           .home-text39 {
-            font-size: 24px;
+            font-size: 22px;
             align-self: flex-start;
             font-style: normal;
             font-weight: 600;
@@ -1072,10 +1072,6 @@ Here's what the above is doing:
             padding-top: 12px;
             margin-bottom: var(--dl-space-space-threeunits);
             padding-bottom: 12px;
-          }
-          .home-text48 {
-            align-self: flex-start;
-            margin-bottom: var(--dl-space-space-threeunits);
           }
           .home-container08 {
             gap: var(--dl-space-space-twounits);
@@ -1371,12 +1367,15 @@ Here's what the above is doing:
               margin-top: var(--dl-space-space-fiveunits);
             }
             .home-text33 {
+              font-size: 22px;
               line-height: 21px;
             }
             .home-text36 {
+              font-size: 22px;
               line-height: 21px;
             }
             .home-text39 {
+              font-size: 22px;
               line-height: 21px;
             }
             .home-cards2 {
@@ -1387,10 +1386,11 @@ Here's what the above is doing:
               padding-bottom: 0px;
             }
             .home-text41 {
+              font-size: 22px;
               line-height: 21px;
             }
             .home-text44 {
-              font-size: 24px;
+              font-size: 22px;
               line-height: 21px;
             }
             .home-text45 {
@@ -1398,13 +1398,13 @@ Here's what the above is doing:
               font-weight: 600;
             }
             .home-text47 {
-              font-size: 24px;
+              font-size: 22px;
               font-style: normal;
               font-weight: 600;
               line-height: 21px;
-              padding-top: 0px;
-              margin-bottom: var(--dl-space-space-fiveunits);
-              padding-bottom: 0px;
+              padding-top: 12px;
+              margin-bottom: var(--dl-space-space-oneandhalfunits);
+              padding-bottom: 12px;
             }
             .home-text48 {
               margin-bottom: var(--dl-space-space-fiveunits);
@@ -1413,15 +1413,24 @@ Here's what the above is doing:
               line-height: 21px;
             }
             .home-text52 {
+              font-size: 22px;
+              font-style: normal;
+              font-weight: 600;
               line-height: 21px;
             }
             .home-text54 {
+              font-size: 22px;
               line-height: 21px;
             }
             .home-text57 {
+              color: var(--dl-color-gray-black);
+              font-size: 22px;
               line-height: 21px;
+              background-color: var(--dl-color-gray-white);
             }
             .home-text58 {
+              font-style: italic;
+              font-weight: 400;
               line-height: 21px;
             }
             .home-accordion {
@@ -1509,7 +1518,7 @@ Here's what the above is doing:
             }
             .home-text14 {
               color: rgb(255, 255, 255);
-              font-size: 32px;
+              font-size: 48px;
               font-style: normal;
               font-weight: 700;
               line-height: 36px;
@@ -1593,12 +1602,27 @@ Here's what the above is doing:
             }
             .home-text33 {
               font-size: 14px;
+              line-height: 24px;
+            }
+            .home-text34 {
+              font-size: 20px;
+              font-style: normal;
+              font-weight: 600;
             }
             .home-text36 {
               font-size: 14px;
+              line-height: 24px;
+            }
+            .home-text37 {
+              font-size: 20px;
+              font-style: normal;
+              font-weight: 600;
             }
             .home-text39 {
-              font-size: 14px;
+              font-size: 20px;
+              font-style: normal;
+              font-weight: 600;
+              line-height: 24px;
             }
             .home-container07 {
               gap: var(--dl-space-space-oneandhalfunits);
@@ -1613,15 +1637,30 @@ Here's what the above is doing:
             }
             .home-text41 {
               font-size: 14px;
+              line-height: 24px;
+            }
+            .home-text42 {
+              font-size: 20px;
+              font-style: normal;
+              font-weight: 600;
             }
             .home-text44 {
               font-size: 14px;
+              line-height: 24px;
+            }
+            .home-text45 {
+              font-size: 20px;
+              font-style: normal;
+              font-weight: 600;
             }
             .home-text47 {
               font-size: 14px;
+              font-style: normal;
+              font-weight: 600;
+              line-height: 24px;
             }
             .home-text48 {
-              font-size: 14px;
+              font-size: 20px;
             }
             .home-container09 {
               gap: var(--dl-space-space-oneandhalfunits);
@@ -1633,18 +1672,32 @@ Here's what the above is doing:
             }
             .home-text51 {
               font-size: 14px;
+              line-height: 24px;
             }
             .home-text52 {
-              font-size: 14px;
+              font-size: 20px;
+              font-style: normal;
+              font-weight: 600;
             }
             .home-text54 {
               font-size: 14px;
+              line-height: 24px;
+            }
+            .home-text55 {
+              font-size: 20px;
+              font-style: normal;
+              font-weight: 600;
             }
             .home-text57 {
-              font-size: 14px;
+              color: var(--dl-color-gray-black);
+              font-size: 24px;
+              line-height: 24px;
+              background-color: var(--dl-color-gray-white);
             }
             .home-text58 {
-              font-size: 14px;
+              font-size: 20px;
+              font-style: italic;
+              font-weight: 400;
             }
             .home-faq {
               padding: var(--dl-space-space-fourunits);
@@ -1733,6 +1786,30 @@ Here's what the above is doing:
               gap: var(--dl-space-space-oneandhalfunits);
               margin-bottom: var(--dl-space-space-oneandhalfunits);
             }
+            .home-text33 {
+              font-size: 14px;
+              line-height: 24px;
+            }
+            .home-text34 {
+              font-size: 18px;
+              font-style: normal;
+              font-weight: 600;
+            }
+            .home-text36 {
+              font-size: 14px;
+              line-height: 24px;
+            }
+            .home-text37 {
+              font-size: 18px;
+              font-style: normal;
+              font-weight: 600;
+            }
+            .home-text39 {
+              font-size: 18px;
+              font-style: normal;
+              font-weight: 600;
+              line-height: 24px;
+            }
             .home-cards2 {
               margin-top: var(--dl-space-space-threeunits);
               margin-bottom: var(--dl-space-space-threeunits);
@@ -1742,7 +1819,31 @@ Here's what the above is doing:
               margin-bottom: var(--dl-space-space-oneandhalfunits);
             }
             .home-schedule2 {
+              margin-top: var(--dl-space-space-halfunit);
               padding-top: 0px;
+            }
+            .home-text41 {
+              font-size: 14px;
+              line-height: 24px;
+            }
+            .home-text42 {
+              font-size: 18px;
+              font-style: normal;
+              font-weight: 600;
+            }
+            .home-text44 {
+              line-height: 24px;
+            }
+            .home-text45 {
+              font-size: 18px;
+              font-style: normal;
+              font-weight: 600;
+            }
+            .home-text47 {
+              line-height: 24px;
+            }
+            .home-text48 {
+              font-size: 18px;
             }
             .home-container09 {
               gap: 0;
@@ -1751,6 +1852,35 @@ Here's what the above is doing:
             }
             .home-schedule3 {
               margin-top: 0px;
+            }
+            .home-text51 {
+              font-size: 14px;
+              line-height: 24px;
+            }
+            .home-text52 {
+              font-size: 18px;
+              font-style: normal;
+              font-weight: 600;
+            }
+            .home-text54 {
+              font-size: 14px;
+              line-height: 24px;
+            }
+            .home-text55 {
+              font-size: 18px;
+              font-style: normal;
+              font-weight: 600;
+            }
+            .home-text57 {
+              color: var(--dl-color-gray-black);
+              font-size: 24px;
+              line-height: 24px;
+              background-color: var(--dl-color-gray-white);
+            }
+            .home-text58 {
+              font-size: 20px;
+              font-style: italic;
+              font-weight: 400;
             }
             .home-faq {
               height: auto;
