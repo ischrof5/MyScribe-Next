@@ -1521,7 +1521,7 @@ Here's what the above is doing:
               font-size: 48px;
               font-style: normal;
               font-weight: 700;
-              line-height: 36px;
+              line-height: 48px;
             }
             .home-text15 {
               color: rgb(238, 233, 254);
@@ -1747,12 +1747,19 @@ Here's what the above is doing:
             }
             .home-header {
               margin-top: 0px;
+              justify-content: center;
+            }
+            .home-text14 {
+              line-height: 64px;
             }
             .home-text15 {
               color: #eee9fe;
             }
             .home-get-started1 {
               width: 100%;
+            }
+            .home-text16 {
+              font-size: 20px;
             }
             .home-features {
               padding-top: var(--dl-space-space-twounits);
@@ -1775,6 +1782,11 @@ Here's what the above is doing:
             .home-analyze {
               margin-bottom: 0px;
             }
+            .home-how-it-works {
+              padding-top: var(--dl-space-space-sixunits);
+              margin-bottom: 0px;
+              padding-bottom: var(--dl-space-space-sixunits);
+            }
             .home-text31 {
               font-size: 30px;
             }
@@ -1785,6 +1797,10 @@ Here's what the above is doing:
             .home-container05 {
               gap: var(--dl-space-space-oneandhalfunits);
               margin-bottom: var(--dl-space-space-oneandhalfunits);
+            }
+            .home-schedule1 {
+              padding-top: 0px;
+              padding-bottom: 0px;
             }
             .home-text33 {
               font-size: 14px;
@@ -1821,6 +1837,7 @@ Here's what the above is doing:
             .home-schedule2 {
               margin-top: var(--dl-space-space-halfunit);
               padding-top: 0px;
+              padding-bottom: 0px;
             }
             .home-text41 {
               font-size: 14px;
@@ -1874,7 +1891,11 @@ Here's what the above is doing:
             .home-text57 {
               color: var(--dl-color-gray-black);
               font-size: 24px;
+              margin-top: var(--dl-space-space-oneandhalfunits);
               line-height: 24px;
+              padding-top: 0px;
+              margin-bottom: 0px;
+              padding-bottom: 0px;
               background-color: var(--dl-color-gray-white);
             }
             .home-text58 {
