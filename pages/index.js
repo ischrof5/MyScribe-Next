@@ -85,7 +85,7 @@ const Home = (props) => {
                 </div>
               </div>
               <div className="home-container02">
-                <a href="tel:8339242571" className="home-link">
+                <a href="tel:+18339242571" className="home-link">
                   <div className="home-get-started">
                     <span className="home-text10">
                       833-924-2571
@@ -149,12 +149,7 @@ closeButton.addEventListener("click", function() {
               Save time taking notes, synthesizing notes, and extracting
               insights from expert calls
             </p>
-            <a
-              href="https://8339242571"
-              target="_blank"
-              rel="noreferrer noopener"
-              className="home-link1"
-            >
+            <a href="tel:+18339242571" className="home-link1">
               <div className="home-get-started1">
                 <span className="home-text16">
                   Text &quot;Hi&quot; to 833-924-2571 to get started
@@ -1867,7 +1862,6 @@ Here's what the above is doing:
               height: auto;
               margin-top: var(--dl-space-space-halfunit);
               padding-top: 0px;
-              margin-bottom: var(--dl-space-space-twounits);
               padding-bottom: 0px;
             }
             .home-text41 {
