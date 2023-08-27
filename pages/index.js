@@ -85,16 +85,18 @@ const Home = (props) => {
                 </div>
               </div>
               <div className="home-container02">
-                <div className="home-get-started">
-                  <span className="home-text10">
-                    833-924-2571
-                    <span
-                      dangerouslySetInnerHTML={{
-                        __html: ' ',
-                      }}
-                    />
-                  </span>
-                </div>
+                <a href="tel:8339242571" className="home-link">
+                  <div className="home-get-started">
+                    <span className="home-text10">
+                      833-924-2571
+                      <span
+                        dangerouslySetInnerHTML={{
+                          __html: ' ',
+                        }}
+                      />
+                    </span>
+                  </div>
+                </a>
               </div>
             </header>
             <div className="home-menu">
@@ -147,11 +149,18 @@ closeButton.addEventListener("click", function() {
               Save time taking notes, synthesizing notes, and extracting
               insights from expert calls
             </p>
-            <div className="home-get-started1">
-              <span className="home-text16">
-                Text &quot;Hi&quot; to 833-924-2571 to get started
-              </span>
-            </div>
+            <a
+              href="https://8339242571"
+              target="_blank"
+              rel="noreferrer noopener"
+              className="home-link1"
+            >
+              <div className="home-get-started1">
+                <span className="home-text16">
+                  Text &quot;Hi&quot; to 833-924-2571 to get started
+                </span>
+              </div>
+            </a>
           </header>
         </section>
         <section className="home-features">
@@ -642,6 +651,9 @@ Here's what the above is doing:
             align-items: flex-start;
             flex-direction: column;
           }
+          .home-link {
+            display: contents;
+          }
           .home-get-started {
             color: white;
             cursor: pointer;
@@ -657,6 +669,7 @@ Here's what the above is doing:
             padding-right: var(--dl-space-space-twounits);
             flex-direction: column;
             padding-bottom: var(--dl-space-space-unit);
+            text-decoration: none;
             background-color: #000000;
           }
           .home-get-started:hover {
@@ -740,6 +753,9 @@ Here's what the above is doing:
             text-align: center;
             line-height: 30px;
           }
+          .home-link1 {
+            display: contents;
+          }
           .home-get-started1 {
             color: white;
             cursor: pointer;
@@ -753,6 +769,7 @@ Here's what the above is doing:
             padding-right: var(--dl-space-space-twounits);
             flex-direction: column;
             padding-bottom: var(--dl-space-space-unit);
+            text-decoration: none;
             background-color: #000000;
           }
           .home-get-started1:hover {
@@ -1597,6 +1614,9 @@ Here's what the above is doing:
               margin-bottom: var(--dl-space-space-oneandhalfunits);
               flex-direction: column;
             }
+            .home-schedule1 {
+              padding-bottom: var(--dl-space-space-unit);
+            }
             .home-text32 {
               font-size: 24px;
             }
@@ -1630,6 +1650,7 @@ Here's what the above is doing:
               flex-direction: column;
             }
             .home-schedule2 {
+              height: auto;
               padding-bottom: var(--dl-space-space-unit);
             }
             .home-text40 {
@@ -1666,6 +1687,10 @@ Here's what the above is doing:
               gap: var(--dl-space-space-oneandhalfunits);
               margin-bottom: var(--dl-space-space-oneandhalfunits);
               flex-direction: column;
+            }
+            .home-schedule3 {
+              margin-top: 0px;
+              padding-bottom: var(--dl-space-space-unit);
             }
             .home-text50 {
               font-size: 24px;
@@ -1733,6 +1758,9 @@ Here's what the above is doing:
             .home-mobile-menu {
               padding: 16px;
             }
+            .home-container02 {
+              margin-right: var(--dl-space-space-halfunit);
+            }
             .home-get-started {
               width: auto;
               margin-top: 0px;
@@ -1747,10 +1775,11 @@ Here's what the above is doing:
             }
             .home-header {
               margin-top: 0px;
+              margin-right: 0px;
               justify-content: center;
             }
             .home-text14 {
-              line-height: 64px;
+              line-height: 56px;
             }
             .home-text15 {
               color: #eee9fe;
@@ -1835,8 +1864,10 @@ Here's what the above is doing:
               margin-bottom: var(--dl-space-space-oneandhalfunits);
             }
             .home-schedule2 {
+              height: auto;
               margin-top: var(--dl-space-space-halfunit);
               padding-top: 0px;
+              margin-bottom: var(--dl-space-space-twounits);
               padding-bottom: 0px;
             }
             .home-text41 {
@@ -1868,7 +1899,8 @@ Here's what the above is doing:
               margin-bottom: 0px;
             }
             .home-schedule3 {
-              margin-top: 0px;
+              margin-top: var(--dl-space-space-threeunits);
+              padding-bottom: var(--dl-space-space-threeunits);
             }
             .home-text51 {
               font-size: 14px;
